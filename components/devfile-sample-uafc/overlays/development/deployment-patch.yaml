@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-uafc
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0009-tenant/tkrw-pr714-0075-0009-app/devfile-sample-uafc@sha256:01bc453701a8694f12a10612ebae51efbff43f91e54d53be077128aadd227740
+        name: my-nodejs
+        resources: {}
+status: {}
